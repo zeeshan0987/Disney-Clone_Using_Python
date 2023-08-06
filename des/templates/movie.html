@@ -1,0 +1,27 @@
+
+{% extends "base.html" %}
+
+    {% block start %}
+    
+    <div class="container d-flex flex-wrap justify-content-center ">
+        {% load static %}
+        {% for i in items %}
+        <div class=" bg-dark text-white m-2 card-group text-center " style="width: 9rem;">
+            <img src="/media/{{i.movies_img}}" style="width: 100%; height: 200px;" class="card-img-top " alt="..." controls poster="/media/{{i.movies_img}}">
+            <div class="card-body text-center d-grid">
+              <!-- <p class="card-img-overlay">{{i.movie_name}}</p> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="/view_movies/{{i.id}}" class="btn btn-outline-secondary btn-sm"> <img
+                src="{% static 'images/play-icon-white.png' %}" alt="" width="24" height="24"
+                class="d-inline-block align-text-top">Play</a>
+            </div>
+          </div>
+          {% endfor %}
+    </div>
+   
+    <!-- /media/{{i.movies_img}} -->
+    {% endblock %}
+    
+    
+   
+  

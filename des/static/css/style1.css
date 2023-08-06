@@ -1,0 +1,174 @@
+
+
+.body{
+  width: 100%;
+  height: auto;
+  background: #0f1014;
+  color: #E1E6F0;
+}
+
+.card1 {
+  position: relative;
+  width: 280px;
+  height: auto;
+  
+  overflow: hidden;
+  /* border: 0.5px solid #ffffff7d; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0.1px rgba(255, 255, 255, 0.194);
+}
+.card-content{
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  height: inherit;
+}
+.card-content img{
+ width: 200px;
+}
+  
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+  
+.card1:hover .video-overlay {
+  opacity: 1;
+}
+  
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carditem{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height:150px;
+}
+.footer{
+  width: 100%;
+  height: 177px;
+  margin-top:35px ;
+  
+  /* border: 2px solid white; */
+}
+.foot{
+  display: flex;
+  width: 90%;
+  margin: 20px;
+  justify-content: space-between;
+  height: auto;
+}
+.f1{
+  width:22.5% ;
+}
+
+.f1 ul span {
+  font-size: 12px;
+  color: #E1E6F0;
+}
+.f1 ul li{
+  padding: 5px;
+  list-style: none;
+}
+.f1 ul li a{
+  font-size: 10px;
+  text-decoration: none;
+  color: #8f98b2;
+}
+.f1 ul li a i{
+  font-size: xx-large;
+}
+.facbook{
+  display: flex;
+}
+.f1 span{
+  font-size: 12px;
+  color: #E1E6F0;
+}
+.facbook div i{
+  color: #E1E6F0;
+  cursor: pointer;
+  font-size: xx-large;
+  margin: 10px;
+}
+.rights{
+  width: 100%;
+  height: auto;
+
+  /* padding: 25px; */
+  /* border: 2px solid #E1E6F0 ; */
+  position: relative;
+}
+.left{
+  margin-left: 35px;
+  position: absolute;
+  margin-bottom: 15px;
+  height: auto;
+}
+.left div span{
+  font-size: 10px;
+  margin-left: 8px;
+  color: #8f98b2;
+  cursor: pointer;
+}
+.r{
+  position: absolute;
+  right: 0;
+  height: auto;
+  margin-right: 50px;
+  display: flex;
+}
+.r div img{
+  margin-right: 10px;
+  width: 140px;
+  cursor: pointer;
+}
+.rform{
+  width: 100%;
+  height: auto;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.194);
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.carditem{
+    flex-direction: column;
+    height: auto;
+  }
+  .card1{
+    margin: 10px;
+    width: 90%;
+    height: auto;
+  }
+  .footer{
+    height: 320px;
+  }
+  .rights{
+    display: flex;
+    flex-direction: column;
+  }
+  .facbook{
+    flex-direction: column;
+  }
+  .r{
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .r div img{
+    margin: 2px;
+  }
+}

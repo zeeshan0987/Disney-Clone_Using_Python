@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+    {% block start %}
+    <div class="container">
+        <div >{% load static %}
+            <div class="col-6 mx-auto p-1"><img src="{% static 'images/cta-logo-one.svg' %}" alt=""></div>
+            <div class="rform ">
+            <form class="col-6 mx-auto p-3 " method="post">
+                <h3 class="mb-4">My Profile</h3>
+                {% csrf_token %}
+              {% if messages %}
+              <hr>
+              <div class="alert alert-primary" role="alert">
+                  {% for message in messages %}
+                  {{ message }}
+                  {% endfor %}
+                </div>
+                {% endif %}
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"> <span class="material-symbols-outlined">
+                    person
+                    </span></label>
+                  <input type="text" name="first_name" placeholder="" class="form-control" id="exampleInputEmail1" value="{{user.first_name}}" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><span class="material-symbols-outlined">
+                        person_4
+                        </span></label>
+                    <input type="text" name="last_name" value="{{user.last_name}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><span class="material-symbols-outlined">
+                        account_circle
+                        </span></label>
+                    <input type="text" name="username"value="{{user.username}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><span class="material-symbols-outlined">
+                        mail
+                        </span></label>
+                    <input type="Email" name="email"  value="{{user.email}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <!-- <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"><span class="material-symbols-outlined">
+                    password
+                    </span></label>
+                  <input type="password" name="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+                </div> -->
+                <!-- <button type="submit" class="btn btn-primary form-control my-2 ">Update</button> -->
+              </form>
+            </div>
+        </div>
+      </div>
+    {% endblock %}
