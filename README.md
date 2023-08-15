@@ -36,7 +36,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in your browser.
 ![Alt text](</red_img/Web capture_19-6-2023_123327_127.0.0.1.jpeg>)
 ![Web capture_19-6-2023_123513_127 0 0 1](https://github.com/zeeshan0987/Disney-Clone_Using_Python/assets/63701711/27c89f74-3946-4507-a50b-eeb78a60ded1)
 
-#Then, Login Page:
+# Then, Login Page:
 ![Web capture_19-6-2023_122759_127 0 0 1](https://github.com/zeeshan0987/Disney-Clone_Using_Python/assets/63701711/eee05e00-0ad7-4345-a927-4fe454d89d24)
 
 # After the Login page :
